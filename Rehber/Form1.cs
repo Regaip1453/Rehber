@@ -52,6 +52,7 @@ namespace Rehber
         }
         public Form1()
         {
+            yazdýr("HOÞGELDÝNÝZ");
             db = new MyDbContex();
             InitializeComponent();
             KisiListele();
@@ -144,6 +145,7 @@ namespace Rehber
 
                     // Diðer bilgileri TextBox'lara ata
                     txt_ad.Text = row.Cells["Ad"].Value.ToString();
+
                     txt_soy.Text = row.Cells["Soyad"].Value.ToString();
 
                     // KisiDetay tablosundan ek bilgileri getir
