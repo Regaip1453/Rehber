@@ -50,9 +50,10 @@
             // 
             ADI.AutoSize = true;
             ADI.Font = new Font("Tahoma", 10F, FontStyle.Bold);
-            ADI.Location = new Point(57, 75);
+            ADI.Location = new Point(74, 96);
+            ADI.Margin = new Padding(4, 0, 4, 0);
             ADI.Name = "ADI";
-            ADI.Size = new Size(56, 24);
+            ADI.Size = new Size(76, 33);
             ADI.TabIndex = 0;
             ADI.Text = "ADI:";
             // 
@@ -60,9 +61,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10F, FontStyle.Bold);
-            label2.Location = new Point(57, 175);
+            label2.Location = new Point(74, 224);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(97, 24);
+            label2.Size = new Size(132, 33);
             label2.TabIndex = 1;
             label2.Text = "SOYADI:";
             // 
@@ -70,9 +72,10 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 10F, FontStyle.Bold);
-            label3.Location = new Point(40, 266);
+            label3.Location = new Point(52, 340);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(118, 24);
+            label3.Size = new Size(161, 33);
             label3.TabIndex = 2;
             label3.Text = "TC KİMLİK";
             // 
@@ -80,9 +83,10 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Tahoma", 10F, FontStyle.Bold);
-            label4.Location = new Point(57, 375);
+            label4.Location = new Point(74, 480);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(99, 24);
+            label4.Size = new Size(139, 33);
             label4.TabIndex = 3;
             label4.Text = "TELEFON";
             label4.Click += label4_Click;
@@ -91,33 +95,37 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Tahoma", 10F, FontStyle.Bold);
-            label5.Location = new Point(40, 504);
+            label5.Location = new Point(52, 645);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(86, 24);
+            label5.Size = new Size(117, 33);
             label5.TabIndex = 4;
             label5.Text = "ADRES:";
             // 
             // txt_ad
             // 
             txt_ad.AccessibleRole = AccessibleRole.SplitButton;
-            txt_ad.Location = new Point(164, 68);
+            txt_ad.Location = new Point(213, 87);
+            txt_ad.Margin = new Padding(4);
             txt_ad.Name = "txt_ad";
-            txt_ad.Size = new Size(150, 31);
+            txt_ad.Size = new Size(194, 39);
             txt_ad.TabIndex = 5;
             // 
             // txt_adres
             // 
-            txt_adres.Location = new Point(132, 481);
+            txt_adres.Location = new Point(172, 616);
+            txt_adres.Margin = new Padding(4);
             txt_adres.Multiline = true;
             txt_adres.Name = "txt_adres";
-            txt_adres.Size = new Size(364, 183);
+            txt_adres.Size = new Size(472, 233);
             txt_adres.TabIndex = 6;
             // 
             // txt_soy
             // 
-            txt_soy.Location = new Point(164, 172);
+            txt_soy.Location = new Point(213, 220);
+            txt_soy.Margin = new Padding(4);
             txt_soy.Name = "txt_soy";
-            txt_soy.Size = new Size(150, 31);
+            txt_soy.Size = new Size(194, 39);
             txt_soy.TabIndex = 7;
             // 
             // dataGridView1
@@ -126,37 +134,42 @@
             dataGridView1.BackgroundColor = Color.Silver;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(502, 12);
+            dataGridView1.Location = new Point(653, 15);
+            dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(887, 872);
+            dataGridView1.Size = new Size(1153, 1116);
             dataGridView1.TabIndex = 8;
             dataGridView1.CellClick += dataGridView1_CellClick;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.CellEndEdit += dataGridView1_CellEndEdit;
+            dataGridView1.EditingControlShowing += dataGridView1_EditingControlShowing;
             // 
             // msk_tc
             // 
-            msk_tc.Location = new Point(164, 263);
+            msk_tc.Location = new Point(213, 337);
+            msk_tc.Margin = new Padding(4);
             msk_tc.Mask = "00000000000";
             msk_tc.Name = "msk_tc";
-            msk_tc.Size = new Size(150, 31);
+            msk_tc.Size = new Size(194, 39);
             msk_tc.TabIndex = 9;
             msk_tc.ValidatingType = typeof(int);
             // 
             // msk_tel
             // 
-            msk_tel.Location = new Point(164, 372);
+            msk_tel.Location = new Point(213, 476);
+            msk_tel.Margin = new Padding(4);
             msk_tel.Mask = "(999) 000-0000";
             msk_tel.Name = "msk_tel";
-            msk_tel.Size = new Size(150, 31);
+            msk_tel.Size = new Size(194, 39);
             msk_tel.TabIndex = 10;
             // 
             // btn_eke
             // 
-            btn_eke.Location = new Point(29, 717);
+            btn_eke.Location = new Point(38, 918);
+            btn_eke.Margin = new Padding(4);
             btn_eke.Name = "btn_eke";
-            btn_eke.Size = new Size(112, 67);
+            btn_eke.Size = new Size(146, 86);
             btn_eke.TabIndex = 11;
             btn_eke.Text = "EKLE";
             btn_eke.UseVisualStyleBackColor = true;
@@ -164,9 +177,10 @@
             // 
             // btn_sil
             // 
-            btn_sil.Location = new Point(202, 717);
+            btn_sil.Location = new Point(263, 918);
+            btn_sil.Margin = new Padding(4);
             btn_sil.Name = "btn_sil";
-            btn_sil.Size = new Size(112, 67);
+            btn_sil.Size = new Size(146, 86);
             btn_sil.TabIndex = 12;
             btn_sil.Text = "SİL";
             btn_sil.UseVisualStyleBackColor = true;
@@ -174,9 +188,10 @@
             // 
             // btn_guncelle
             // 
-            btn_guncelle.Location = new Point(384, 717);
+            btn_guncelle.Location = new Point(478, 906);
+            btn_guncelle.Margin = new Padding(4);
             btn_guncelle.Name = "btn_guncelle";
-            btn_guncelle.Size = new Size(112, 67);
+            btn_guncelle.Size = new Size(146, 86);
             btn_guncelle.TabIndex = 13;
             btn_guncelle.Text = "GÜNCELLE";
             btn_guncelle.UseVisualStyleBackColor = true;
@@ -184,9 +199,10 @@
             // 
             // btn_temizle
             // 
-            btn_temizle.Location = new Point(202, 812);
+            btn_temizle.Location = new Point(263, 1039);
+            btn_temizle.Margin = new Padding(4);
             btn_temizle.Name = "btn_temizle";
-            btn_temizle.Size = new Size(112, 72);
+            btn_temizle.Size = new Size(146, 92);
             btn_temizle.TabIndex = 14;
             btn_temizle.Text = "TEMİZLE";
             btn_temizle.UseVisualStyleBackColor = true;
@@ -194,10 +210,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
-            ClientSize = new Size(1389, 890);
+            ClientSize = new Size(1800, 1120);
             Controls.Add(btn_temizle);
             Controls.Add(btn_guncelle);
             Controls.Add(btn_sil);
@@ -213,11 +229,12 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(ADI);
+            Margin = new Padding(4);
             MaximizeBox = false;
-            MaximumSize = new Size(1411, 946);
+            MaximumSize = new Size(1826, 1191);
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
-            MinimumSize = new Size(1411, 0);
+            MinimumSize = new Size(1826, 71);
             Name = "Form1";
             Text = "REHBER";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
